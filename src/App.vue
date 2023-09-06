@@ -2,14 +2,14 @@
   <div class="resume-header text-light mb-4">
     <div class="container py-5">
       <div class="row gap-3">
-        <div class="col-sm-auto col-lg-auto col-12 col-md-12 text-center">
+        <div class="col-sm-auto col-lg-auto col-12 col-md-12 text-center" v-if="toggleImage">
           <img :src="resumeImage" alt="Resume image" class="resume-image" />
         </div>
         <div class="col-sm col-lg my-auto col-12 col-md-12">
           <div class="row">
             <div class="col-6 col-md-3 text-start main-content">
-              <p class="m-0">mju6404101332@mju.ac.th</p>
-              <p class="m-0">tawan.csmju@gmail.com</p>
+              <p class="m-0"><a class="text-white" href="mailto:mju6404101332@mju.ac.th">mju6404101332@mju.ac.th</a></p>
+              <p class="m-0"><a class="text-white" href="mailto:tawan.csmju@gmail.com">tawan.csmju@gmail.com</a></p>
               <p class="m-0">Chaing Mai, Thailand</p>
             </div>
             <div class="col-12 col-md-6 text-center order-md-0 order-first">
@@ -28,6 +28,7 @@
             <div class="col-12 no-print text-center">
               [ <a href="javascript:window.print()" class="no-print text-white">Printable version</a> ]
               [ <a href="javascript:window.print()" class="no-print text-white">Switch to</a> ]
+              [ <a href="javascript: void(0)" @click="toggleImage = !toggleImage" class="no-print text-white">Toggle image</a> ]
               [ <a href="//github.com/moking55/resume" class="no-print text-white">Source</a> ]
             </div>
           </div>
@@ -131,7 +132,8 @@ import resumeImage from "@/assets/resume-image.jpg";
 export default {
   data() {
     return {
-      resumeImage: resumeImage
+      resumeImage: resumeImage,
+      toggleImage: true,
     };
   }
 };
@@ -159,7 +161,7 @@ hr {
   }
   hr {
     margin-top: 0px !important;
-    margin-bottom: 2px !important;
+    margin-bottom: 4px !important;
   }
 
   /* decrase all header tags size */
@@ -169,7 +171,8 @@ hr {
   h4,
   h5,
   h6 {
-    font-size: 20px !important;
+    font-size: 18px !important;
+    margin: 0 !important;
   }
 
   /* fiting heading size */
