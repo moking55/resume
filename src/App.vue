@@ -8,8 +8,14 @@
         <div class="col-sm col-lg my-auto col-12 col-md-12">
           <div class="row">
             <div class="col-6 col-md-3 text-start main-content">
-              <p class="m-0"><a class="text-white" href="mailto:mju6404101332@mju.ac.th">mju6404101332@mju.ac.th</a></p>
-              <p class="m-0"><a class="text-white" href="mailto:tawan.csmju@gmail.com">tawan.csmju@gmail.com</a></p>
+              <p class="m-0">
+                <a class="text-white" href="mailto:mju6404101332@mju.ac.th"
+                  >mju6404101332@mju.ac.th</a
+                >
+              </p>
+              <p class="m-0">
+                <a class="text-white" href="mailto:tawan.csmju@gmail.com">tawan.csmju@gmail.com</a>
+              </p>
               <p class="m-0">Chaing Mai, Thailand</p>
             </div>
             <div class="col-12 col-md-6 text-center order-md-0 order-first">
@@ -26,10 +32,16 @@
               >
             </div>
             <div class="col-12 no-print text-center">
-              [ <a href="javascript:window.print()" class="no-print text-white">Printable version</a> ]
-              [ <a href="javascript:window.print()" class="no-print text-white">Switch to</a> ]
-              [ <a href="javascript: void(0)" @click="toggleImage = !toggleImage" class="no-print text-white">Toggle image</a> ]
-              [ <a href="//github.com/moking55/resume" class="no-print text-white">Source</a> ]
+              [
+              <a href="javascript:window.print()" class="no-print text-white">Printable version</a>
+              ] [ <a href="javascript:window.print()" class="no-print text-white">Switch to</a> ] [
+              <a
+                href="javascript: void(0)"
+                @click="toggleImage = !toggleImage"
+                class="no-print text-white"
+                >Toggle image</a
+              >
+              ] [ <a href="//github.com/moking55/resume" class="no-print text-white">Source</a> ]
             </div>
           </div>
         </div>
@@ -54,25 +66,58 @@
           your team.
         </p>
       </div>
-      <div class="col-12 mt-3">
-        <h4>EDUCATION</h4>
-        <hr />
-        <ul>
-          <li>
-            <b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPA 3.48 ]
-          </li>
-          <li><b>B. Computer Science,</b> Maejo University, TH 2021 - now [ GPAX 3.43 ]</li>
-        </ul>
-      </div>
-      <div class="col-12 mt-3">
-        <h4>TECHNOLOGIES AND LANGUAGES</h4>
-        <hr />
-        <ul>
-          <li>Languages: Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), HTML, CSS.</li>
-          <li>Frameworks: Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.</li>
-          <li>Databases: Firebase, MySQL.</li>
-          <li>Other: Vercel, Github, CloudFlare, Netlify.</li>
-        </ul>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-7 mt-3">
+            <div class="col-12">
+              <h4>EDUCATION</h4>
+              <hr />
+              <ul>
+                <li>
+                  <b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPA
+                  3.48 ]
+                </li>
+                <li><b>B. Computer Science,</b> Maejo University, TH 2021 - now [ GPAX 3.43 ]</li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <h4>TECHNOLOGIES AND LANGUAGES</h4>
+              <hr />
+              <ul>
+                <li>
+                  Languages: Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP
+                  (strong), HTML, CSS.
+                </li>
+                <li>Frameworks: Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.</li>
+                <li>Databases: Firebase, MySQL.</li>
+                <li>Other: Vercel, Github, CloudFlare, Netlify.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-5 mt-3">
+            <h4>CERTIFICATES</h4>
+            <hr />
+
+            <div class="mt-1">
+              <ul>
+                <li>
+                  <a href="" class="no-print">
+                    <img
+                      src="https://unity.com/sites/default/files/styles/large/public/2021-10/Certification-Badges-User-Programmer-600x600.png?itok=12VDzBS7"
+                      alt="Unity Certified Programmer"
+                      width="44px"
+                      class="mt-1"
+                    />
+                  </a>
+                  <b>Unity Certified User: Programmer</b> (9/3/2022)
+                </li>
+                <li>
+                  <b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-12 mt-3">
         <h4>PROJECTS</h4>
@@ -133,7 +178,7 @@ export default {
   data() {
     return {
       resumeImage: resumeImage,
-      toggleImage: true,
+      toggleImage: true
     };
   }
 };
@@ -150,14 +195,22 @@ hr {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+.print-only {
+  display: none;
+}
+
 @media print {
   .no-print {
     display: none !important;
   }
 
+  .print-only {
+    display: block !important;
+  }
+
   /* fitting font size to A4 paper */
   .main-content {
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
   hr {
     margin-top: 0px !important;
