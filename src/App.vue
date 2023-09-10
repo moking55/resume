@@ -112,7 +112,7 @@
                   <b>Unity Certified User: Programmer</b> (9/3/2022)
                 </li>
                 <li>
-                  <b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)
+                  <b>CSCMU Coding Challenge 2023</b> (30/8/2023)
                 </li>
               </ul>
             </div>
