@@ -279,7 +279,7 @@ export default {
           ]
         }
       },
-      currentLanguage: "th" // Default language is English
+      currentLanguage: "en" // Default language is English
     };
   },
   computed: {
