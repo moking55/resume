@@ -33,7 +33,7 @@
               }}</a>
               <a class="d-block text-light" :href="'//' + currentTranslations.linkedin">Linkedin</a>
             </div>
-            <div class="col-12 no-print text-center">
+            <div class="col-12 no-print text-center pt-4">
               [
               <a href="javascript:window.print()" class="no-print text-white">{{
                 currentTranslations.printableVersion
@@ -74,7 +74,49 @@
           {{ currentTranslations.introduction[1] }}
         </p>
       </div>
-      <div class="col-12">
+      <div class="col-12 no-print">
+        <div class="row">
+          <div class="col-12 col-md-7 mt-3">
+            <div class="col-12">
+              <h4>{{ currentTranslations.education[0].title }}</h4>
+              <hr />
+              <ul>
+                <li
+                  v-html="education"
+                  v-for="(education, index) in currentTranslations.education[0].items"
+                  :key="index"
+                ></li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <h4>{{ currentTranslations.technologies[0].title }}</h4>
+              <hr />
+              <ul>
+                <li
+                  v-html="technologies"
+                  v-for="(technologies, index) in currentTranslations.technologies[0].items"
+                  :key="index"
+                ></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 mt-3">
+            <h4>CERTIFICATES</h4>
+            <hr />
+
+            <div class="mt-1">
+              <ul>
+                <li
+                  v-for="(item, index) in currentTranslations.certificates"
+                  :key="index"
+                  v-html="item"
+                ></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 print-only">
         <div class="row">
           <div class="col-7 mt-3">
             <div class="col-12">
@@ -106,17 +148,11 @@
 
             <div class="mt-1">
               <ul>
-                <li>
-                  <a href="" class="no-print">
-                    <img
-                      :src="unity_cert"
-                      alt="Unity Certified Programmer"
-                      style="width: 44px"
-                      class="mt-1"
-                    /> </a
-                  ><b>Unity Certified User: Programmer</b> (9/3/2022)
-                </li>
-                <li><b>CSCMU Coding Challenge 2023</b> (30/8/2023)</li>
+                <li
+                  v-for="(item, index) in currentTranslations.certificates"
+                  :key="index"
+                  v-html="item"
+                ></li>
               </ul>
             </div>
           </div>
@@ -165,8 +201,8 @@ export default {
           toggleImage: "Toggle image",
           source: "Source",
           introduction: [
-            "My name is Maythawat Mahawan, I am a computer science student at Maejo University with a passion for learning and sharing knowledge. I am a quick learner and I am always eager to take on new challenges. I am also a secretary in the computer club, where I help to organize events and promote computer science to other students.",
-            "I am confident that I have the skills and knowledge necessary to be a successful programming intern. I am a hard worker and I am always willing to go the extra mile. I am also a team player and I am able to work well with others. I am eager to learn more about the programming industry and I am confident that I can make a significant contribution to your team."
+            "I am Maythawat Mahawan, also known as Tawan a Computer Science student at Maejo University with a passion for learning and sharing knowledge. I am a quick learner and I am always eager to take on new challenges. I am also help to organize events and promote computer science to other students. In my previous I was responsible for organizing and running several events, include 20th and 21th Youth Computer Camp Project and 2022 Science Week events.",
+            "I am a highly motivated and organized individual with strong communication and teamwork skills. I am confident that I have the skills and experience necessary to succeed in a computer science career."
           ],
           education: [
             {
@@ -189,8 +225,9 @@ export default {
             }
           ],
           certificates: [
-            "<b>Unity Certified User: Programmer</b> (9/3/2022)",
-            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)"
+            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)",
+            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
+            "<b>New Generation Invention Contest Vocational education level, 1st place winner</b> (9/12/2020)"
           ],
           projects_title: "PROJECTS",
           projects: [
@@ -227,8 +264,8 @@ export default {
           toggleImage: "แสดงรูปภาพ",
           source: "Source",
           introduction: [
-            `กระผม นายเมธาวัฒน์ มหาวัน นักศึกษาชั้นปีที่ ${new Date().getFullYear() - 2020} สาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ มีความสนใจในการเขียนโปรแกรม และการแบ่งปันความรู้ กระผมเป็นคนที่เรียนรู้ได้เร็วและมีความกระตือรือร้นในการทำงาน กระผมเป็นเลขาธิการในชมรมคอมพิวเตอร์ ที่ช่วยในการจัดงานและส่งเสริมให้นักศึกษาคณะวิทยาศาสตร์ได้รู้จักกับวิชาการคอมพิวเตอร์มากขึ้น`,
-            `กระผมมั่นใจว่า กระผมมีทักษะและความรู้ที่จำเป็นต่อการเป็นนักฝึกงานที่ประสบความสำเร็จ กระผมยังสามารถทำงานร่วมกับผู้อื่นได้ดีและต้องการศึกษาความรู้ในอุตสาหกรรมคอมพิวเตอร์ กระผมมั่นใจว่า ผมสามารถมีส่วนร่วมในทีมของคุณได้เป็นอย่างมาก`
+            `ผมชื่อ เมธาวัฒน์ มหาวัน หรือที่รู้จักในชื่อ ตะวัน นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ ส่วนตัวมีความชอบและค้นหาและแชร์ความรู้ และพร้อมที่จะเผชิญกับความท้าทายใหม่ๆอยู่เสมอ อีกทั้งยังมีส่วนร่วมจัดกิจกรรมและส่งเสริมวิทยาการคอมพิวเตอร์ให้กับนักเรียนคนอื่นๆ ก่อนหน้านี้ผมได้มีส่วนร่วมในการจัดการและดำเนินกิจกรรมต่างๆ อาทิ โครงการค่ายคอมพิวเตอร์เยาวชนครั้งที่ 20 และ 21 และกิจกรรมสัปดาห์วิทยาศาสตร์ปี 2022 มหาวิทยาลัยแม่โจ้`,
+            `ผมเชื่อว่าผมมีทักษะในการสื่อสารและความสามารถในการทำงานเป็นทีมที่ดี และประสบการณ์ที่จำเป็นต่อการประสบความสำเร็จในสาขาอาชีพวิทยาการคอมพิวเตอร์`
           ],
           education: [
             {
@@ -251,13 +288,14 @@ export default {
             }
           ],
           certificates: [
-            "<b>Unity Certified User: Programmer</b> (9/3/2022)",
-            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)"
+            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)",
+            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
+            "<b>ชนะเลิศ ระดับเหรียญทอง การประกวดสิ่งประดิษฐ์ของคนรุ่นใหม่</b> (9/12/2020)"
           ],
           projects_title: "ผลงาน",
           projects: [
             `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a href="//bcitsvc.com">bcitsvc.com</a>`,
-            `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์ <a href="//blockify.codename-t.com">blockify.codename-t.com</a>`,
+            `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์`,
             `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.`,
@@ -279,7 +317,7 @@ export default {
           ]
         }
       },
-      currentLanguage: "th" // Default language is English
+      currentLanguage: "en" // Default language is English
     };
   },
   computed: {
