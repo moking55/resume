@@ -25,13 +25,13 @@
               <h4 style="color: lightgrey">({{ currentTranslations.nickname }})</h4>
             </div>
             <div class="col-6 col-md-3 text-end text-white main-content">
-              <a class="d-block text-white" :href="'//' + currentTranslations.github">{{
+              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.github">{{
                 currentTranslations.github
               }}</a>
-              <a class="d-block text-white" :href="'//' + currentTranslations.website">{{
+              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.website">{{
                 currentTranslations.website
               }}</a>
-              <a class="d-block text-white" :href="'//' + currentTranslations.linkedin">Linkedin</a>
+              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.linkedin">Linkedin</a>
             </div>
             <div class="col-12 no-print text-center pt-4">
               [
@@ -51,7 +51,7 @@
                 >{{ currentTranslations.toggleImage }}</a
               >
               ] [
-              <a
+              <a target="_blank"
                 :href="'//' + currentTranslations.github + '/resume'"
                 class="no-print text-white"
                 >{{ currentTranslations.source }}</a
@@ -232,15 +232,15 @@ export default {
           ],
           projects_title: "PROJECTS",
           projects: [
-            `<b>BCITSVC -</b> A modern faculty website for an educational institution, designed for user-friendly information and resources. <a href="//bcitsvc.com">bcitsvc.com</a>`,
+            `<b>BCITSVC -</b> A modern faculty website for an educational institution, designed for user-friendly information and resources. <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>Blockify -</b> A straightforward webshop platform designed specifically for Minecraft enthusiasts.`,
-            `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
-            `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a href="//vtuber.in.th">vtuber.in.th</a>`,
-            `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
-            `<b>ClassX -</b> An efficient online classroom platform for seamless virtual learning experiences. <a href="//github.com/moking55/ClassX-simple-classroom"
+            `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
+            `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
+            `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
+            `<b>ClassX -</b> An efficient online classroom platform for seamless virtual learning experiences. <a target="_blank" href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a
             >`,
-            `<b>LTC Guide -</b> A handy student handbook application created using the Flutter framework. <a
+            `<b>LTC Guide -</b> A handy student handbook application created using the Flutter framework. <a target="_blank"
               href="//thaiinvention.net/bb_projectdetail.php?p=cHJvamVjdF9pZD01Mjc2NiZjZmdfaWQ9MzYmY29tcGV0X2lkPTI="
               >thaiinvention.net</a
             >`
@@ -296,16 +296,16 @@ export default {
           ],
           projects_title: "ผลงาน",
           projects: [
-            `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a href="//bcitsvc.com">bcitsvc.com</a>`,
+            `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์`,
-            `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
-            `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a href="//vtuber.in.th">vtuber.in.th</a>`,
-            `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
-            `<b>ClassX -</b> แพลตฟอร์มห้องเรียนออนไลน์ที่มีประสิทธิภาพสำหรับการเรียนการสอนแบบเสมือนจริง <a href="//github.com/moking55/ClassX-simple-classroom"
+            `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
+            `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
+            `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
+            `<b>ClassX -</b> แพลตฟอร์มห้องเรียนออนไลน์ที่มีประสิทธิภาพสำหรับการเรียนการสอนแบบเสมือนจริง <a target="_blank" href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a>`,
             `
             <b>LTC Guide -</b> แอพพลิเคชั่นคู่มือนักเรียนออนไลน์วิทยาลัยเทคนิคลำพูนสร้างโดย Flutter framework
-            <a
+            <a target="_blank"
               href="//thaiinvention.net/bb_projectdetail.php?p=cHJvamVjdF9pZD01Mjc2NiZjZmdfaWQ9MzYmY29tcGV0X2lkPTI="
               >thaiinvention.net</a
             >`
