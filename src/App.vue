@@ -217,7 +217,7 @@ export default {
             {
               title: "TECHNOLOGIES AND LANGUAGES",
               items: [
-                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), HTML, CSS.",
+                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
@@ -237,6 +237,7 @@ export default {
             `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
+            `<b>Liquiix Webshop -</b> a custom Minecraft webshop tailored for "Liquiix RPG Server". <a target="_blank" href="//github.com/moking55/liquiix-webshop">github.com/moking55/liquiix-webshop</a>`,
             `<b>ClassX -</b> An efficient online classroom platform for seamless virtual learning experiences. <a target="_blank" href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a
             >`,
@@ -281,7 +282,7 @@ export default {
             {
               title: "เทคโนโลยีและภาษาที่ใช้",
               items: [
-                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), HTML, CSS.",
+                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
@@ -301,6 +302,7 @@ export default {
             `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
+            `<b>Liquiix Webshop -</b> ระบบเว็บช็อปร้านค้า Minecraft สำหรับเซิร์ฟเวอร์ "Liquiix RPG Server" <a target="_blank" href="//github.com/moking55/liquiix-webshop">github.com/moking55/liquiix-webshop</a>`,
             `<b>ClassX -</b> แพลตฟอร์มห้องเรียนออนไลน์ที่มีประสิทธิภาพสำหรับการเรียนการสอนแบบเสมือนจริง <a target="_blank" href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a>`,
             `
