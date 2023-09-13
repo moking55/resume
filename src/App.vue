@@ -25,13 +25,13 @@
               <h4 style="color: lightgrey">({{ currentTranslations.nickname }})</h4>
             </div>
             <div class="col-6 col-md-3 text-end text-white main-content">
-              <a class="d-block text-light" :href="'//' + currentTranslations.github">{{
+              <a class="d-block text-white" :href="'//' + currentTranslations.github">{{
                 currentTranslations.github
               }}</a>
-              <a class="d-block text-light" :href="'//' + currentTranslations.website">{{
+              <a class="d-block text-white" :href="'//' + currentTranslations.website">{{
                 currentTranslations.website
               }}</a>
-              <a class="d-block text-light" :href="'//' + currentTranslations.linkedin">Linkedin</a>
+              <a class="d-block text-white" :href="'//' + currentTranslations.linkedin">Linkedin</a>
             </div>
             <div class="col-12 no-print text-center pt-4">
               [
@@ -63,7 +63,7 @@
       </div>
     </div>
   </div>
-  <div class="container py-2 main-content">
+  <div class="container py-0 main-content">
     <div class="row">
       <div class="col-12">
         <p>
@@ -101,7 +101,7 @@
             </div>
           </div>
           <div class="col-12 col-md-5 mt-3">
-            <h4>CERTIFICATES</h4>
+            <h4>CERTIFICATIONS</h4>
             <hr />
 
             <div class="mt-1">
@@ -201,15 +201,15 @@ export default {
           toggleImage: "Toggle image",
           source: "Source",
           introduction: [
-            "I am Maythawat Mahawan, also known as Tawan a Computer Science student at Maejo University with a passion for learning and sharing knowledge. I am a quick learner and I am always eager to take on new challenges. I am also help to organize events and promote computer science to other students. In my previous I was responsible for organizing and running several events, include 20th and 21th Youth Computer Camp Project and 2022 Science Week events.",
+            "I am Maythawat Mahawan, also known as Tawan a Computer Science student at Maejo University with a passion for learning, I have had some experience in programming. This made me understand the basic workings of OOP and MVC systems. I am always eager to take on new challenges. I am also help to organize events and promote computer science to other students, include 20th and 21th Youth Computer Camp Project and 2022 Science Week events.",
             "I am a highly motivated and organized individual with strong communication and teamwork skills. I am confident that I have the skills and experience necessary to succeed in a computer science career."
           ],
           education: [
             {
               title: "EDUCATION",
               items: [
-                "<b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPA 3.48 ]",
-                "<b>B. Computer Science,</b> Maejo University, TH 2021 - now [ GPAX 3.43 ]"
+                "<b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPAX 3.34 ]",
+                "<b>B. Computer Science,</b> Maejo University, TH 2021 - present [ GPAX 3.43 ]"
               ]
             }
           ],
@@ -219,15 +219,16 @@ export default {
               items: [
                 "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), HTML, CSS.",
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
-                "<b>Databases:</b> Firebase, MySQL.",
-                "<b>Other:</b> Vercel, Github, CloudFlare, Netlify."
+                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
+                "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
+                "<b>Other:</b> Github, Github Actions, StackBlitz, AWS SageMaker Studio."
               ]
             }
           ],
           certificates: [
-            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)",
+            "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
-            "<b>New Generation Invention Contest Vocational education level, 1st place winner</b> (9/12/2020)"
+            "<b>1st Prize New Generation Invention Contest Vocational education level</b> (9/12/2020)"
           ],
           projects_title: "PROJECTS",
           projects: [
@@ -235,7 +236,7 @@ export default {
             `<b>Blockify -</b> A straightforward webshop platform designed specifically for Minecraft enthusiasts.`,
             `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a href="//vtuber.in.th">vtuber.in.th</a>`,
-            `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework.`,
+            `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
             `<b>ClassX -</b> An efficient online classroom platform for seamless virtual learning experiences. <a href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a
             >`,
@@ -264,14 +265,14 @@ export default {
           toggleImage: "แสดงรูปภาพ",
           source: "Source",
           introduction: [
-            `ผมชื่อ เมธาวัฒน์ มหาวัน หรือที่รู้จักในชื่อ ตะวัน นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ ส่วนตัวมีความชอบและค้นหาและแชร์ความรู้ และพร้อมที่จะเผชิญกับความท้าทายใหม่ๆอยู่เสมอ อีกทั้งยังมีส่วนร่วมจัดกิจกรรมและส่งเสริมวิทยาการคอมพิวเตอร์ให้กับนักเรียนคนอื่นๆ ก่อนหน้านี้ผมได้มีส่วนร่วมในการจัดการและดำเนินกิจกรรมต่างๆ อาทิ โครงการค่ายคอมพิวเตอร์เยาวชนครั้งที่ 20 และ 21 และกิจกรรมสัปดาห์วิทยาศาสตร์ปี 2022 มหาวิทยาลัยแม่โจ้`,
+            `ผมชื่อ เมธาวัฒน์ มหาวัน หรือที่รู้จักในชื่อ ตะวัน นักศึกษาสาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยแม่โจ้ ส่วนตัวมีความชอบและค้นคว้าและเคยมีประสบการณ์ในการเขียนโปรแกรมมาบ้างแล้ว ซึ่งทำให้เข้าใจการทำงานของระบบ OOP และ MVC พื้นฐาน กระผมพร้อมที่จะเผชิญกับความท้าทายใหม่ๆอยู่เสมอ อีกทั้งยังมีส่วนร่วมจัดกิจกรรมและส่งเสริมวิทยาการคอมพิวเตอร์ให้กับนักเรียนคนอื่นๆ อาทิเช่น โครงการค่ายยุวชนคอมพิวเตอร์ครั้งที่ 20 และ 21 และกิจกรรมสัปดาห์วิทยาศาสตร์ปี 2022 มหาวิทยาลัยแม่โจ้`,
             `ผมเชื่อว่าผมมีทักษะในการสื่อสารและความสามารถในการทำงานเป็นทีมที่ดี และประสบการณ์ที่จำเป็นต่อการประสบความสำเร็จในสาขาอาชีพวิทยาการคอมพิวเตอร์`
           ],
           education: [
             {
               title: "การศึกษา",
               items: [
-                "<b>ปวช. เทคนิคคอมพิวเตอร์,</b> วิทยาลัยเทคนิคลำพูน, 2018 - 2021 [ GPA 3.48 ]",
+                "<b>ปวช. เทคนิคคอมพิวเตอร์,</b> วิทยาลัยเทคนิคลำพูน, 2018 - 2021 [ GPAX 3.34 ]",
                 "<b>ปริญญาตรี. วิทยาการคอมพิวเตอร์,</b> มหาวิทยาลัยแม่โจ้, 2021 - ปัจจุบัน [ GPAX 3.43 ]"
               ]
             }
@@ -282,15 +283,16 @@ export default {
               items: [
                 "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), HTML, CSS.",
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
-                "<b>Databases:</b> Firebase, MySQL.",
-                "<b>Other:</b> Vercel, Github, CloudFlare, Netlify."
+                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
+                "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
+                "<b>Other:</b> Github, Github Actions, StackBlitz, AWS SageMaker Studio."
               ]
             }
           ],
           certificates: [
-            "<b>CSCMU Coding Challenge 2023</b> (30/8/2023)",
+            "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
-            "<b>ชนะเลิศ ระดับเหรียญทอง การประกวดสิ่งประดิษฐ์ของคนรุ่นใหม่</b> (9/12/2020)"
+            "<b>รางวัลชนะเลิศ ระดับเหรียญทอง การประกวดสิ่งประดิษฐ์ของคนรุ่นใหม่</b> (9/12/2020)"
           ],
           projects_title: "ผลงาน",
           projects: [
@@ -298,7 +300,7 @@ export default {
             `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์`,
             `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a href="//vtuber.in.th">vtuber.in.th</a>`,
-            `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.`,
+            `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
             `<b>ClassX -</b> แพลตฟอร์มห้องเรียนออนไลน์ที่มีประสิทธิภาพสำหรับการเรียนการสอนแบบเสมือนจริง <a href="//github.com/moking55/ClassX-simple-classroom"
               >github.com/moking55/ClassX-simple-classroom</a>`,
             `
@@ -360,13 +362,21 @@ hr {
     display: block !important;
   }
 
+  .text-white {
+    color: black !important;
+  }
+
   /* fitting font size to A4 paper */
   .main-content {
     font-size: 12px !important;
   }
   hr {
-    margin-top: 0px !important;
+    margin-top: -2px !important;
     margin-bottom: 4px !important;
+  }
+
+  a {
+    color: black !important;
   }
 
   /* decrase all header tags size */
