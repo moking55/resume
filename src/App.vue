@@ -221,7 +221,7 @@ export default {
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
-                "<b>Other:</b> Github, Github Actions, StackBlitz, AWS SageMaker Studio."
+                "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
               ]
             }
           ],
@@ -286,7 +286,7 @@ export default {
                 "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
-                "<b>Other:</b> Github, Github Actions, StackBlitz, AWS SageMaker Studio."
+                "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
               ]
             }
           ],
@@ -370,7 +370,7 @@ hr {
 
   /* fitting font size to A4 paper */
   .main-content {
-    font-size: 12px !important;
+    font-size: 11.7px !important;
   }
   hr {
     margin-top: -2px !important;
