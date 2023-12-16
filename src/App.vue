@@ -209,7 +209,7 @@ export default {
               title: "EDUCATION",
               items: [
                 "<b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPAX 3.34 ]",
-                "<b>B. Computer Science,</b> Maejo University, TH 2021 - present [ GPAX 3.43 ]"
+                "<b>B. Computer Science,</b> Maejo University, TH 2021 - present [ GPAX 3.50 ]"
               ]
             }
           ],
@@ -218,7 +218,7 @@ export default {
               title: "TECHNOLOGIES AND LANGUAGES",
               items: [
                 "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
-                "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
+                "<b>Frameworks:</b> Codeigniter 4, Express.js (intermediate), VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
                 "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
@@ -226,12 +226,14 @@ export default {
             }
           ],
           certificates: [
+            "<b>INET MS Basic Cyber Security</b> (24/11/2023)",
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
             "<b>1st Prize New Generation Invention Contest Vocational education level</b> (9/12/2020)"
           ],
           projects_title: "PROJECTS",
           projects: [
+            `<b>Comcamp 22 (contributor) -</b> An official website for ComCamp 22, an annual computer camp held at Maejo University. <a target="_blank" href="//comcamp.csmju.com">comcamp.csmju.com</a>`,
             `<b>BCITSVC -</b> A modern faculty website for an educational institution, designed for user-friendly information and resources. <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>Blockify -</b> A straightforward webshop platform designed specifically for Minecraft enthusiasts.`,
             `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
@@ -274,7 +276,7 @@ export default {
               title: "การศึกษา",
               items: [
                 "<b>ปวช. เทคนิคคอมพิวเตอร์,</b> วิทยาลัยเทคนิคลำพูน, 2018 - 2021 [ GPAX 3.34 ]",
-                "<b>ปริญญาตรี. วิทยาการคอมพิวเตอร์,</b> มหาวิทยาลัยแม่โจ้, 2021 - ปัจจุบัน [ GPAX 3.43 ]"
+                "<b>ปริญญาตรี. วิทยาการคอมพิวเตอร์,</b> มหาวิทยาลัยแม่โจ้, 2021 - ปัจจุบัน [ GPAX 3.50 ]"
               ]
             }
           ],
@@ -283,7 +285,7 @@ export default {
               title: "เทคโนโลยีและภาษาที่ใช้",
               items: [
                 "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
-                "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
+                "<b>Frameworks:</b> Codeigniter 4, Express.js (intermediate), VueJS, Vuetify, Bootstrap, Bulma.",
                 "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
                 "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
                 "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
@@ -291,12 +293,14 @@ export default {
             }
           ],
           certificates: [
+            "<b>INET MS Basic Cyber Security</b> (24/11/2023)",
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
             "<b>รางวัลชนะเลิศ ระดับเหรียญทอง การประกวดสิ่งประดิษฐ์ของคนรุ่นใหม่</b> (9/12/2020)"
           ],
           projects_title: "ผลงาน",
           projects: [
+            `<b>Comcamp 22 (contributor) -</b> เว็บไซต์อย่างเป็นทางการของค่ายคอมแคมป์ ครั้งที่ 22 ที่จัดขึ้นที่มหาวิทยาลัยแม่โจ้ <a target="_blank" href="//comcamp.csmju.com">comcamp.csmju.com</a>`,         
             `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์`,
             `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
