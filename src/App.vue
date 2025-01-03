@@ -280,23 +280,23 @@ export default {
           ] */
           experiences: [
             {
-              title: "ประสบการณ์",
+              title: "EXPERIENCES",
               items: [
                 {
                   title:
-                  "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
+                    "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
                   whatido: [
-                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
-                  "พัฒนาระบบ POS สำหรับธุรกิจร้านอาหาร",
-                  "วิจัยและนำเทคโนโลยีใหม่ๆ มาใช้เพื่อปรับปรุงการทำงานของบริษัท"
+                    "Developed and maintained the company's website and internal systems.",
+                    "Developed POS system for the restaurant business.",
+                    "Researched and implemented new technologies to improve the company's workflow."
                   ]
                 },
                 {
                   title:
-                  "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
+                    "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
                   whatido: [
-                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
-                  "ออกแบบและพัฒนาฟีเจอร์ใหม่ๆ และปรับปรุงระบบ"
+                    "Developed and maintained the company's website and internal systems.",
+                    "Designed and implemented new features and improvements."
                   ]
                 }
               ]
@@ -372,19 +372,19 @@ export default {
               items: [
                 {
                   title:
-                    "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
+                  "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
                   whatido: [
-                    "Developed and maintained the company's website and internal systems.",
-                    "Developed POS system for the restaurant business.",
-                    "Researched and implemented new technologies to improve the company's workflow."
+                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
+                  "พัฒนาระบบ POS สำหรับธุรกิจร้านอาหาร",
+                  "วิจัยและนำเทคโนโลยีใหม่ๆ มาใช้เพื่อปรับปรุงการทำงานของบริษัท"
                   ]
                 },
                 {
                   title:
-                    "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
+                  "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
                   whatido: [
-                    "Developed and maintained the company's website and internal systems.",
-                    "Designed and implemented new features and improvements."
+                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
+                  "ออกแบบและพัฒนาฟีเจอร์ใหม่ๆ และปรับปรุงระบบ"
                   ]
                 }
               ]
