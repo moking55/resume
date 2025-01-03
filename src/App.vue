@@ -25,13 +25,24 @@
               <h4 style="color: lightgrey">({{ currentTranslations.nickname }})</h4>
             </div>
             <div class="col-6 col-md-3 text-end text-white main-content">
-              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.github">{{
-                currentTranslations.github
-              }}</a>
-              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.website">{{
-                currentTranslations.website
-              }}</a>
-              <a target="_blank" class="d-block text-white" :href="'//' + currentTranslations.linkedin">Linkedin</a>
+              <a
+                target="_blank"
+                class="d-block text-white"
+                :href="'//' + currentTranslations.github"
+                >{{ currentTranslations.github }}</a
+              >
+              <a
+                target="_blank"
+                class="d-block text-white"
+                :href="'//' + currentTranslations.website"
+                >{{ currentTranslations.website }}</a
+              >
+              <a
+                target="_blank"
+                class="d-block text-white"
+                :href="'//' + currentTranslations.linkedin"
+                >Linkedin</a
+              >
             </div>
             <div class="col-12 no-print text-center pt-4">
               [
@@ -51,7 +62,8 @@
                 >{{ currentTranslations.toggleImage }}</a
               >
               ] [
-              <a target="_blank"
+              <a
+                target="_blank"
                 :href="'//' + currentTranslations.github + '/resume'"
                 class="no-print text-white"
                 >{{ currentTranslations.source }}</a
@@ -65,7 +77,7 @@
   </div>
   <div class="container py-0 main-content">
     <div class="row">
-      <div class="col-12">
+      <!-- <div class="col-12">
         <p>
           {{ currentTranslations.introduction[0] }}
         </p>
@@ -73,7 +85,7 @@
         <p>
           {{ currentTranslations.introduction[1] }}
         </p>
-      </div>
+      </div> -->
       <div class="col-12 no-print">
         <div class="row">
           <div class="col-12 col-md-7 mt-3">
@@ -165,7 +177,7 @@
           <li v-html="item" v-for="(item, index) in currentTranslations.projects" :key="index"></li>
         </ul>
       </div>
-      <div class="col-12 mt-3">
+      <!--<div class="col-12 mt-3">
         <h4>{{ currentTranslations.interests_title }}</h4>
         <hr />
         <ul>
@@ -174,6 +186,21 @@
             v-for="(item, index) in currentTranslations.interests"
             :key="index"
           ></li>
+        </ul>
+      </div> -->
+      <div class="col-12 mt-3">
+        <h4>{{ currentTranslations.experiences[0].title }}</h4>
+        <hr />
+        <ul>
+          <li
+            v-for="(experience, index) in currentTranslations.experiences[0].items"
+            :key="index"
+          >
+            <p class="mb-1"><b>{{ experience.title }}</b></p>
+            <ul>
+              <li v-for="(whatido, index) in experience.whatido" :key="index">{{ whatido }}</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -190,7 +217,7 @@ export default {
       toggleImage: true,
       translations: {
         en: {
-          email: ["mju6404101332@mju.ac.th", "tawan.csmju@gmail.com", "Chaing Mai, Thailand"],
+          email: ["tawan.csmju@gmail.com", "Chaing Mai, Thailand"],
           name: "Maythawat Mahawan",
           nickname: "Tawan",
           github: "github.com/moking55",
@@ -208,8 +235,8 @@ export default {
             {
               title: "EDUCATION",
               items: [
-                "<b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPAX 3.34 ]",
-                "<b>B. Computer Science,</b> Maejo University, TH 2021 - present [ GPAX 3.43 ]"
+                "<b>VC. Technical Computer,</b> Lamphun Technical Collage, TH 2018 - 2021 [ GPAX 3.45 ]",
+                "<b>B. Computer Science,</b> Maejo University, TH 2021 - present [ GPAX 3.45 ]"
               ]
             }
           ],
@@ -217,24 +244,21 @@ export default {
             {
               title: "TECHNOLOGIES AND LANGUAGES",
               items: [
-                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
-                "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
-                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
-                "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
-                "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
+                "<b>Languages:</b> Node.js, Javascript, TypeScript, SQL, Python, PHP",
+                "<b>Frameworks:</b> Codeigniter 4, Express, NestJS, VueJS, Vuetify, Tailwinds, Bootstrap, Nuxt 3, NextJs.",
+                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL, PostgreSQL.",
+                "<b>IaaS, PaaS:</b> Vercel, CloudFlare",
+                "<b>Other:</b> Github, Github Actions, Jenkins, Portainer, Docker"
               ]
             }
           ],
           certificates: [
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
-            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
-            "<b>1st Prize New Generation Invention Contest Vocational education level</b> (9/12/2020)"
+            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`
           ],
           projects_title: "PROJECTS",
           projects: [
             `<b>BCITSVC -</b> A modern faculty website for an educational institution, designed for user-friendly information and resources. <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
-            `<b>Blockify -</b> A straightforward webshop platform designed specifically for Minecraft enthusiasts.`,
-            `<b>Lanna Words -</b> An engaging simple word guessing game with a user-friendly interface. <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
             `<b>Liquiix Webshop -</b> a custom Minecraft webshop tailored for "Liquiix RPG Server". <a target="_blank" href="//github.com/moking55/liquiix-webshop">github.com/moking55/liquiix-webshop</a>`,
@@ -246,16 +270,39 @@ export default {
               >thaiinvention.net</a
             >`
           ],
-          interests_title: "INTERESTS",
+          /*           interests_title: "INTERESTS",
           interests: [
             "Areas : Coding, Productivity & Life-hacks",
             "Beverage : Americano, Iced Espresso, Matcha tea",
-            "Games : Arcade, Indie, FPS",
-            "Pet : I have a cat name Khaijeaw"
+            "Games : Arcade, Indie, FPS"
+          ] */
+          experiences: [
+            {
+              title: "ประสบการณ์",
+              items: [
+                {
+                  title:
+                  "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
+                  whatido: [
+                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
+                  "พัฒนาระบบ POS สำหรับธุรกิจร้านอาหาร",
+                  "วิจัยและนำเทคโนโลยีใหม่ๆ มาใช้เพื่อปรับปรุงการทำงานของบริษัท"
+                  ]
+                },
+                {
+                  title:
+                  "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
+                  whatido: [
+                  "พัฒนาและดูแลเว็บไซต์และระบบภายในของบริษัท",
+                  "ออกแบบและพัฒนาฟีเจอร์ใหม่ๆ และปรับปรุงระบบ"
+                  ]
+                }
+              ]
+            }
           ]
         },
         th: {
-          email: ["mju6404101332@mju.ac.th", "tawan.csmju@gmail.com", "เชียงใหม่, ประเทศไทย"],
+          email: ["tawan.csmju@gmail.com", "เชียงใหม่, ประเทศไทย"],
           name: "เมธาวัฒน์ มหาวัน",
           nickname: "ตะวัน",
           github: "github.com/moking55",
@@ -273,8 +320,8 @@ export default {
             {
               title: "การศึกษา",
               items: [
-                "<b>ปวช. เทคนิคคอมพิวเตอร์,</b> วิทยาลัยเทคนิคลำพูน, 2018 - 2021 [ GPAX 3.34 ]",
-                "<b>ปริญญาตรี. วิทยาการคอมพิวเตอร์,</b> มหาวิทยาลัยแม่โจ้, 2021 - ปัจจุบัน [ GPAX 3.43 ]"
+                "<b>ปวช. เทคนิคคอมพิวเตอร์,</b> วิทยาลัยเทคนิคลำพูน, 2018 - 2021 [ GPAX 3.45 ]",
+                "<b>ปริญญาตรี. วิทยาการคอมพิวเตอร์,</b> มหาวิทยาลัยแม่โจ้, 2021 - ปัจจุบัน [ GPAX 3.45 ]"
               ]
             }
           ],
@@ -282,24 +329,21 @@ export default {
             {
               title: "เทคโนโลยีและภาษาที่ใช้",
               items: [
-                "<b>Languages:</b> Node.js (intermediate), Javascript, TypeScript, SQL, Python, PHP (strong), Java, CSS.",
-                "<b>Frameworks:</b> Codeigniter 4, VueJS, Vuetify, Bootstrap, Bulma.",
-                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL.",
-                "<b>IaaS, PaaS:</b> Vercel, GitHub Pages, CloudFlare, Netlify",
-                "<b>Other:</b> Github, Github Actions, jQuery, StackBlitz, AWS SageMaker Studio."
+                "<b>Languages:</b> Node.js, Javascript, TypeScript, SQL, Python, PHP",
+                "<b>Frameworks:</b> Codeigniter 4, Express, NestJS, VueJS, Vuetify, Tailwinds, Bootstrap, Nuxt 3, NextJs.",
+                "<b>Databases:</b> Firebase (Firestore & Authentication), MySQL, PostgreSQL.",
+                "<b>IaaS, PaaS:</b> Vercel, CloudFlare",
+                "<b>Other:</b> Github, Github Actions, Jenkins, Portainer, Docker"
               ]
             }
           ],
           certificates: [
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
-            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`,
-            "<b>รางวัลชนะเลิศ ระดับเหรียญทอง การประกวดสิ่งประดิษฐ์ของคนรุ่นใหม่</b> (9/12/2020)"
+            `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`
           ],
           projects_title: "ผลงาน",
           projects: [
             `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
-            `<b>Blockify -</b> แพลตฟอร์มอีคอมเมอร์ชสำหรับซื้อขายสินค้าภายในเกม Minecraft ผ่านระบบเว็บไซต์`,
-            `<b>Lanna Words -</b> เกมทายคำภาษาล้านนาที่มีอินเตอร์เฟซใช้งานง่าย <a target="_blank" href="//lannawords.codename-t.com">lannawords.codename-t.com</a>`,
             `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
             `<b>Liquiix Webshop -</b> ระบบเว็บช็อปร้านค้า Minecraft สำหรับเซิร์ฟเวอร์ "Liquiix RPG Server" <a target="_blank" href="//github.com/moking55/liquiix-webshop">github.com/moking55/liquiix-webshop</a>`,
@@ -312,12 +356,35 @@ export default {
               >thaiinvention.net</a
             >`
           ],
-          interests_title: "ความสนใจ",
+          /*           interests_title: "ความสนใจ",
           interests: [
             "สนใจเป็นพิเศษ : การเขียนโปรแกรม, การสร้างผลงาน & เทคนิคการใช้ชีวิต",
             "เครื่องดื่ม : อเมริกาโน่, เอสเปรสโซ่, ชาเขียวมัจฉะ",
-            "แนวเกม : อาเขต, อินดี้, FPS",
-            "สัตว์เลี้ยง : ผมมีแมวชื่อไข่เจียว"
+            "แนวเกม : อาเขต, อินดี้, FPS"
+          ] */
+          experiences: [
+            {
+              title: "ประสบการณ์",
+              items: [
+                {
+                  title:
+                    "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
+                  whatido: [
+                    "Developed and maintained the company's website and internal systems.",
+                    "Developed POS system for the restaurant business.",
+                    "Researched and implemented new technologies to improve the company's workflow."
+                  ]
+                },
+                {
+                  title:
+                    "(intern) Backend-developer, Dudee Indeed Co.,Ltd, Thailand, 2024 (6 months)",
+                  whatido: [
+                    "Developed and maintained the company's website and internal systems.",
+                    "Designed and implemented new features and improvements."
+                  ]
+                }
+              ]
+            }
           ]
         }
       },
