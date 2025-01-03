@@ -253,11 +253,13 @@ export default {
             }
           ],
           certificates: [
+            "<b>INET MS Basic Cyber Security</b> (24/11/2023)",
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`
           ],
           projects_title: "PROJECTS",
           projects: [
+            `<b>Comcamp 22 (contributor) -</b> An official website for ComCamp 22, an annual computer camp held at Maejo University. <a target="_blank" href="//comcamp.csmju.com">comcamp.csmju.com</a>`,
             `<b>BCITSVC -</b> A modern faculty website for an educational institution, designed for user-friendly information and resources. <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>VTuber.in.th -</b> A Thai vtuber tracking website that provides information and updates on popular virtual YouTubers. <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> A standalone Minecraft webshop developed using CodeIgniter 4 framework. <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
@@ -338,11 +340,13 @@ export default {
             }
           ],
           certificates: [
+            "<b>INET MS Basic Cyber Security</b> (24/11/2023)",
             "<b>CSCMU Coding Challenge 2023 Participant</b> (30/8/2023)",
             `<img src="${unity_cert}" alt="Unity Certified Programmer" style="width: 44px" class="mt-1 no-print" /> </a ><b>Unity Certified User: Programmer</b> (9/3/2022)`
           ],
           projects_title: "ผลงาน",
           projects: [
+            `<b>Comcamp 22 (contributor) -</b> เว็บไซต์อย่างเป็นทางการของค่ายคอมแคมป์ ครั้งที่ 22 ที่จัดขึ้นที่มหาวิทยาลัยแม่โจ้ <a target="_blank" href="//comcamp.csmju.com">comcamp.csmju.com</a>`,         
             `<b>BCITSVC -</b> เว็บไซต์แผนกวิชาคอมพิวเตอร์ธุรกิจวิทยาลัยอาชีวศึกษาสุราษร์ธานี <a target="_blank" href="//bcitsvc.com">bcitsvc.com</a>`,
             `<b>VTuber.in.th -</b> เว็บไซต์ติดตามวีทูเบอร์ไทยที่ให้ข้อมูลและอัพเดทข่าวสารวีทูเบอร์ไทย <a target="_blank" href="//vtuber.in.th">vtuber.in.th</a>`,
             `<b>MC Mart -</b> เว็บไซต์สำหรับบริหารจัดการร้านค้าออนไลน์สำหรับเกม Minecraft ที่พัฒนาด้วย CodeIgniter 4 framework.  <a target="_blank" href="//github.com/moking55/mc-mart">github.com/moking55/mc-mart</a>`,
