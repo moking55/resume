@@ -284,7 +284,7 @@ export default {
               items: [
                 {
                   title:
-                    "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - ปัจจุบัน",
+                    "(R&D) Full-stack Developer, Dudee Indeed Co.,Ltd, Thailand, 2024 - Present",
                   whatido: [
                     "Developed and maintained the company's website and internal systems.",
                     "Developed POS system for the restaurant business.",
